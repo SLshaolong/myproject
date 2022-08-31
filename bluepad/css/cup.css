@@ -1,0 +1,60 @@
+body {
+    background-color: #f1f1f1;
+}
+
+.cup-header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #fff;
+}
+
+.cup-header .nav {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    clear: both;
+}
+
+.cup-header .nav li {
+    float: left;
+    border-top: 4px solid transparent;
+}
+
+.cup-header .nav li a {
+    display: block;
+    height: 66px;
+    padding: 0 30px;
+    line-height: 66px;
+    color: #333;
+    font-size: 16px;
+}
+
+.cup-header .nav li.on {
+    border-top: 4px solid #109459;
+    color: #109459;
+}
+
+.cup-title {
+    width: 750px;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.cup-title p {
+    text-align: center;
+    font-size: 26px;
+    color: #109d59;
+    line-height: 2;
+}
+
+.cup-img {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.cup-img img {
+    width: 750px;
+}

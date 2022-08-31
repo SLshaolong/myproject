@@ -1,0 +1,161 @@
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(36, 41, 44);
+    color: #ffffff;
+}
+
+.header .header-in {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header .header-in .logo {
+    float: left;
+    height: 90px;
+}
+
+.header .header-in .logo img {
+    float: left;
+    margin-top: 25px;
+}
+
+.header .header-in .logo .flag-word {
+    float: left;
+    margin: 22px 0 0 15px;
+}
+
+.header .header-in .logo .flag-word strong {
+    font-size: 24px;
+    font-family: '幼圆';
+    letter-spacing: 13px;
+}
+
+.header .header-in .logo .flag-word strong::after {
+    content: '';
+    display: block;
+    border-top: 2px solid #ffffff;
+    width: 100px;
+    margin: 2px 0;
+}
+
+.header .header-in .logo .flag-word h3 {
+    font-size: 11px;
+    margin-left: -4px;
+    font-family: '幼圆';
+}
+
+.header .header-in .main-nav {
+    float: left;
+    font-size: 16px;
+    height: 90px;
+    width: 610px;
+    margin-left: 40px;
+}
+
+.header .header-in .main-nav .navs {
+    float: left;
+}
+
+.header .header-in .main-nav .navs:hover {
+    color: #2ecc71;
+}
+
+.header .header-in .main-nav ul {
+    margin-top: 33px;
+}
+
+.header .header-in .main-nav ul li a {
+    position: relative;
+    color: #fff;
+    display: block;
+    padding: 2px 9px;
+    border-radius: 3px;
+    margin-right: 9px;
+}
+
+.header .header-in .main-nav ul li {
+    position: relative;
+}
+
+.header .header-in .main-nav .ts-num {
+    position: absolute;
+    border-radius: 50%;
+    font-size: 12px;
+    background-color: #f00;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    left: 155px;
+    top: -5px;
+    z-index: 10;
+}
+
+.header .header-in .main-nav .on {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.header .header-in .main-nav li a.navs.on::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    top: 37px;
+    left: 15px;
+}
+
+.header .login {
+    float: right;
+    font-size: 14px;
+    height: 90px;
+    line-height: 90px;
+    position: relative;
+}
+
+.header .login .search {
+    float: left;
+}
+
+.header .login #search {
+    width: 170px;
+    height: 30px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #000;
+    padding-left: 15px;
+    color: #2ecc71;
+    font-size: 12px;
+}
+
+.header .login #search-button {
+    float: right;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 40px 40px 0;
+    background: url(../images/searchIcon_06.png) no-repeat center;
+    background-color: #2ecc71;
+    cursor: pointer;
+    top: 31.5px;
+    right: 86px;
+}
+
+.header .login .login-register {
+    float: right;
+    margin-left: 20px;
+    word-spacing: 5px;
+}
+
+.header .login .login-register a {
+    color: #fff;
+    margin-left: 10px;
+}

@@ -1,0 +1,261 @@
+.swiper {
+    width: 100%;
+    height: 500px;
+}
+
+.s-content {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+}
+
+.swiper .s1 {
+    background-image: url(../images/banner1.jpg)
+}
+
+.swiper .s2 {
+    background-image: url(../images/banner2.jpg)
+}
+
+.swiper .s3 {
+    background-image: url(../images/banner3.jpg)
+}
+
+.swiper .text {
+    width: 550px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    border-radius: 20px;
+}
+
+.swiper .text h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.swiper .text p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+/* 乐章部分 */
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.product .p-title {
+    width: 140px;
+    margin: 40px auto;
+    display: block;
+    text-align: center;
+    color: #292929;
+}
+
+.product .p-title .p-title-l {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.p-title .icon {
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    position: relative;
+}
+
+.p-title .icon::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #e0e0e0;
+    left: 0;
+    top: 8px;
+}
+
+.p-title .icon::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #e0e0e0;
+    right: 0;
+    top: 8px;
+}
+
+.p-title .p-title-p {
+    font: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+
+/* 乐章 */
+
+.p-details {
+    width: 100%;
+    margin: 50px 0 20px 0;
+}
+
+.p-details .d-list {
+    width: 100%;
+    height: 500px;
+}
+
+.p-details .d-list .d-item {
+    float: left;
+    height: 208px;
+    border: 1px solid #fff;
+    width: 50%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.d-list .d-item:nth-child(1),
+.d-list .d-item:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.item-img {
+    float: left;
+    width: 210px;
+    height: 210px;
+}
+
+.d-list .d-item .item-text {
+    float: left;
+    margin-left: 20px;
+    height: 210px;
+    width: 350px;
+    overflow: hidden;
+}
+
+.d-list .d-item .item-text .text-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.d-list .d-item .item-text .text-title:hover {
+    color: #52c58c;
+}
+
+.d-list .d-item .item-text .text-author {
+    display: block;
+    color: #6dc7fa;
+    font-size: 12px;
+    margin: 12px 0;
+}
+
+.d-list .d-item .item-text .text-content {
+    color: #646464;
+    width: 350px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.d-list .d-item .comment {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: #ccc;
+}
+
+.d-list .d-item .comment .zan-num {
+    margin-right: 25px;
+}
+
+.d-list .d-item .comment .zan-icon {
+    background: url(../images/zan_05.png) no-repeat center center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -20px;
+}
+
+.d-list .d-item .comment .comment-icon {
+    background: url(../images/pinglun_05.png) no-repeat center center;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 20px;
+}
+
+
+/* 游记 */
+
+.note-list {
+    overflow: hidden;
+}
+
+.note-list .note {
+    float: left;
+    width: 278px;
+    height: 470px;
+    margin-right: 25px;
+    border: 1px solid #bababa;
+    overflow: hidden;
+}
+
+.note-list .note:nth-child(4) {
+    margin: 0;
+}
+
+.note-list .note a {
+    position: relative;
+    display: block;
+}
+
+.note-list .note a img {
+    display: block;
+    height: 380px;
+    width: 100%;
+}
+
+.note-list .note a .note-title {
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.note-list .note a .note-author {
+    font-size: 12px;
+    color: #6dc7fa;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.note-list .note a .note-desc {
+    position: absolute;
+    top: 125px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 20px;
+    box-sizing: border-box;
+    /* 动画 */
+    margin-left: -280px;
+    transition: all 0.5s;
+}
+
+.note-list .note a .note-desc .note-desc-content {
+    color: #fff;
+    line-height: 20px;
+}
+
+.note a:hover .note-desc {
+    margin-left: 0;
+}

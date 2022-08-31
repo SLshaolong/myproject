@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15364",
+      "name": "双箭头右",
+      "font_class": "shuangjiantouyou",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "29522595",
+      "name": "10I菜单,布局",
+      "font_class": "a-10Icaidanbuju",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    }
+  ]
+}

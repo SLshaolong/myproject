@@ -1,0 +1,7 @@
+<view class="container">
+    <view wx:if="{{isTrue}}" class="btn"><button type="primary" bindtap="getUserInfo">获取个人信息</button></view>
+    <view class="info" wx:else>
+    <view class="img"><image src="{{url}}"></image></view>
+        <view class="name">{{name}}</view>
+    </view>
+</view>

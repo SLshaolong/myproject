@@ -1,0 +1,26 @@
+/* pages/indexDetail/indexDetail.wxss */
+/* 总体样式 */
+.container {
+    padding: 0 20rpx;
+}
+
+.title {
+    font-size: 34rpx;
+    margin-bottom: 20rpx;
+}
+
+.img image {
+    width: 100%;
+}
+
+.img {
+    margin-bottom: 20rpx;
+}
+
+.desc {
+    color: #777777;
+    font-size: 28rpx;
+    line-height: 44rpx;
+    text-indent: 2em;
+    text-align: justify;
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 100px;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header .inner {
+    overflow: hidden;
+    clear: both;
+}
+
+.logo {
+    width: 40%;
+    float: left;
+    background: url("../images/logo.png") no-repeat;
+    height: 100px;
+    background-size: 100%;
+}
+
+.search {
+    float: right;
+    width: 60%;
+    text-align: right;
+    position: relative;
+}
+
+.search .top {
+    position: absolute;
+    right: 0;
+}
+
+.search .top a {
+    font-size: 12px;
+    color: #000;
+    margin-right: 15px;
+}
+
+.input {
+    margin-top: 50px;
+}
+
+.input input {
+    border: 1px solid #000;
+    height: 30px;
+    width: 200px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.input .box-search {
+    color: white;
+    width: 50px;
+    height: 30px;
+    background-color: rgb(38, 85, 175);
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    left: -5px;
+    cursor: pointer;
+}
+
+.nav {
+    height: 40px;
+    border-bottom: 2px solid rgb(58, 84, 134);
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.nav .inner .navlist {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+}
+
+.navlist li {
+    width: 11%;
+    text-align: center;
+}
+
+.navlist li a {
+    color: rgb(0, 73, 152);
+    font-weight: 600;
+}
+
+.navlist li.on {
+    background-color: rgb(0, 73, 152);
+}
+
+.navlist li.on a {
+    color: #fff;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.footer .inner div {
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.footer .inner div span {
+    display: inline-block;
+    border-right: 1px solid #000;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.footer .inner div span:last-child {
+    border: none;
+}
+
+.banner {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.banner .inner img {
+    width: 100%;
+}

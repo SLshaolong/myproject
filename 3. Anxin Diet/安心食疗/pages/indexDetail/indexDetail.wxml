@@ -1,0 +1,9 @@
+<!--pages/indexDetail/indexDetail.wxml-->
+<!-- 标题 -->
+<view class="container">
+    <view class="title">{{detailarr.title}}</view>
+    <view class="img">
+        <image src="{{detailarr.image}}"></image>
+    </view>
+    <view class="desc">{{detailarr.detail}}</view>
+</view>

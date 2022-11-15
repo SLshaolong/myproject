@@ -1,0 +1,19 @@
+export default{
+    namespaced:true,
+    state:{
+        page:1,
+        search:'',
+        product:{}
+    },
+    mutations:{
+        setpage(state,page){
+            state.page=page
+        },
+        setSearch(state,info){
+            state.search=info
+        },
+        setProduct(state,data){
+            state.product=data
+        }
+    }
+}

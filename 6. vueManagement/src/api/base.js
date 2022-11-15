@@ -1,0 +1,26 @@
+const base={
+    baseUrl:"http://182.92.103.212:3030",
+    login:'/api/login',
+    registe:'/api/registe',
+    productlist:'/api/backend/item/selectTbItemAllByPage',
+    total:'/api/total',
+    search:'/api/search',
+    selectItem:'/api/selectItem',
+    UpdateImg:'/api/upload/img',
+    InsertProduct:'/api/setProduct',
+    delectProduct:'/api/deleteProduct',
+    reset:'/api/reset',
+    resetSelect:'/api/resetSelect',
+    paramsList:'/api/Itemparams',
+    ParamsSelect:'/api/paramsSelect',
+    AddParams:'/api/addParams',
+    SelectionParams:'/api/searchAllParams',
+    DeleteParams:'/api/deleteParams',
+    Selectcontent:'/api/selectcount',
+    DeltectContent:'/api//delectContent',
+    AddContent:'/api//addContent',
+    searchlist:'/api/search/list',
+    addlist:'/api/add/list',
+    deletelist:'/api//delete/list'
+}
+export default base

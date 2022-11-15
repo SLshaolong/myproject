@@ -1,0 +1,26 @@
+<!--pages/index/index.wxml-->
+<view class="container"  >
+<!-- 背景区域 -->
+    <view class="bag" style="top: {{bgtop}}px;"   >
+        <image src="../../images/bg.jpg"></image><image src="../../images/bg.jpg"></image>
+    </view>
+
+    <view class="Myfly"   bindtouchmove="MoveStart" 
+    style="left: {{myleft}}px; top: {{mytop}}px; "  >
+        <image src="../../images/me.png"></image>
+    </view>
+    <view class="bull" wx:if="{{isshow}}" style="left: {{bullx}}px; top: {{bulltop}}px;"
+    data-id="show">
+        <image src="../../images/b.png"></image>
+    </view>
+
+    <view class="arrfly" >
+        <image src="{{arrimg}}" style="left: {{arrx}}px; top: {{arry}}px;" 
+        wx:if="{{arrisshow}}"
+         ></image>
+         <image src="../../images/boom.gif" style="left:{{boomx}}px; top: {{boomy}}px;" wx:if="{{boomshow}}"></image>
+    </view>
+    <view class="score">
+        您的得分:{{score}}
+    </view>
+</view>

@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    border-bottom: 1px solid #fff;
+}
+
+.header .title {
+    font-size: 40px;
+    color: rgb(170, 6, 6);
+}
+
+.header .title p {
+    font-size: 18px;
+    display: inline-block;
+    color: #000;
+}
+
+.nav {
+    height: 60px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 10%;
+    line-height: 60px;
+}
+
+.nav li {
+    margin-right: 8%;
+    cursor: pointer;
+}
+
+.main {
+    overflow: hidden;
+    clear: both;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.main .left {
+    float: left;
+    width: 30%;
+}
+
+.main .left-title {
+    background-color: #fff;
+    margin: 10px 0;
+    color: #000;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.left-show {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(230, 230, 230, 0.396);
+}
+
+.left-show img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.left-show .desc {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.right {
+    float: left;
+    margin-left: 2%;
+    width: 68%;
+}
+
+.right .rightlist {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.right .rightlist li {
+    overflow: hidden;
+    clear: both;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+    background-color: rgba(230, 230, 230, 0.396);
+    margin-top: 20px;
+}
+
+.right .rightlist li:nth-child(1) {
+    margin-top: 0;
+}
+
+.right-left {
+    float: left;
+    width: 70%;
+}
+
+.data {
+    width: 30%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.data img {
+    width: 100%;
+}
+
+.righe-title {
+    margin-bottom: 10px;
+}
+
+.time {
+    color: rgb(91, 91, 91);
+    margin-top: 10px;
+}
+
+.j {
+    width: 100%;
+}
+
+.j img {
+    width: 100%;
+    height: 147px;
+}
+
+.main {
+    margin-bottom: 20px;
+}

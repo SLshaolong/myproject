@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    overflow: hidden;
+    clear: both;
+}
+
+.logo {
+    height: 80px;
+    width: 30%;
+    background: url(../images/logo.jfif) no-repeat center center;
+    float: left;
+    background-position: -4px -72px;
+}
+
+.right {
+    float: right;
+    margin-right: 20px;
+}
+
+.right .conte {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid #000;
+    margin-top: 40px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.conte span img {
+    width: 20px;
+}
+
+.nav {
+    height: 60px;
+    background-color: rgb(11, 11, 109);
+    border-radius: 10px;
+    overflow: hidden;
+    clear: both;
+}
+
+.nav .navlist {
+    height: 60px;
+    float: left;
+}
+
+.nav .navlist li {
+    display: inline-block;
+    color: white;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.nav .navlist li a {
+    padding: 0 20px;
+    color: white;
+    border-right: 1px solid #aaa;
+}
+
+.nav .navlist li:last-child a {
+    border: none;
+}
+
+.search {
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.box {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    background-color: #fff;
+    position: relative;
+}
+
+.search input {
+    border: 1px solid #000;
+    height: 25px;
+    box-sizing: border-box;
+    width: 250px;
+    vertical-align: top;
+}
+
+.box::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 8px solid rgb(126, 126, 126);
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid transparent;
+    top: 5px;
+    left: 10px;
+}
+
+.footer {
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: #aaa;
+    box-sizing: border-box;
+}
+
+.copy {
+    height: 40px;
+    background-color: #dcdcdc;
+    overflow: hidden;
+    clear: both;
+    line-height: 40px;
+}
+
+.copy span {
+    float: right;
+    margin-right: 20px;
+}

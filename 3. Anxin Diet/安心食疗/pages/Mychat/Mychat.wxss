@@ -1,0 +1,160 @@
+page {
+    background-color: #f1f1f1;
+}
+
+.list {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20rpx;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    padding: 20rpx;
+    width: 100%;
+    transform: translateX(180rpx);
+    margin-left: -180rpx;
+    transition: all 0.4s;
+    margin-bottom: 90rpx;
+}
+
+.circle {
+    padding: 10rpx;
+}
+
+.img image {
+    width: 180rpx;
+    height: 180rpx;
+}
+
+.content {
+    height: 180rpx;
+    position: relative;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+}
+
+.title {
+    margin-bottom: 10rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.subTitle {
+    font-size: 28rpx;
+    color: #999;
+    height: 80rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.price {
+    position: absolute;
+    left: 20rpx;
+    bottom: 0;
+    color: red;
+    font-size: 26rpx;
+}
+
+.update {
+    position: absolute;
+    bottom: 0;
+    left: 200rpx;
+    width: 200rpx;
+    display: flex;
+    align-items: center;
+}
+
+.reduce,
+.add {
+    width: 40rpx;
+    height: 40rpx;
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+}
+
+.value {
+    width: 60rpx;
+    text-align: center;
+}
+
+.remove {
+    background-color: red;
+    color: white;
+    width: 180rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(180rpx);
+    transition: all 0.4s;
+}
+
+.movelist .item,
+.movelist .remove {
+    transform: translateX(0);
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: #fff;
+    align-items: center;
+    height: 90rpx;
+    padding:0 0 0 20rpx;
+    border-top: 1rpx solid rgb(224, 224, 224);
+}
+.all{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.all icon{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+}
+.sum{
+    display: flex;
+    align-items: center;
+    color: teal;
+    font-size: 28rpx;
+    justify-content: space-between;
+
+}
+.sum .he{
+    font-size: 32rpx;
+    color: #000;
+    margin-right: 10rpx;
+    
+}
+.small{
+    font-size: 24rpx;
+    color: #666;
+    margin-left: 10rpx;
+}
+.banlance{
+    background-color: green;
+    color: #fff;
+    height: 100%;
+    font-size: 28rpx;
+    padding:0 40rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rpx;
+}
+.banlance-gray{
+    background-color: rgb(182, 182, 182);
+}

@@ -1,4 +1,26 @@
-# myproject
-我的项目组，有前端开发的html静态网页 
-有蓝莓派项目 ，因为数据库的原因可能无法正常登录 可以自己新建一个数据库 
-还有小程序，飞机大战跟安心食疗
+### 少龙的个人小仓库
+
+## 我的介绍啊
+
+# hi guys i'm shaolong ,this is my prject storehouse
+
+1. html静态网页，包括不局限于平时写的静态小页面
+
+2. 使用php和jQuery开发的蓝莓派小程序
+
+3. 使用原生微信小程序开发的安心食疗小程序
+
+4. 使用微信原生小程序开发的飞机大战小游戏 --惹 有个小bug
+
+5. 使用vue2.x开发的 移动动态播报小助手
+    1. e-charts
+    2. axios
+    3. vant2.x
+6. 使用vue2.x开发的 后台管理系统
+    1. element ui
+    2. axios
+    3. wangeditor
+7. 使用vue3.x开发的在线文档
+    1. axios
+    2. pinia
+    3. vant3.x

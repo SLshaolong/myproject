@@ -1,0 +1,40 @@
+<view class="list {{item.istouch?'movelist':''}}" wx:for="{{list}}" wx:key="id" bindtouchstart="touchstart"
+bindtouchmove="touchmove" data-index="{{index}}"
+>
+    <view class="item">
+        <view class="circle">
+            <icon wx:if="{{item.selected}}" type="success" bindtap="selectList" data-index="{{index}}"></icon>
+            <icon wx:else type="circle" color="#999" bindtap="selectList" data-index="{{index}}"></icon>
+        </view>
+        <view class="img">
+            <image src="{{item.pic}}"></image>
+        </view>
+        <view class="content">
+            <view class="title">{{item.name}}</view>
+            <view class="subTitle">{{item.info}}</view>
+            <view class="price">￥{{item.price}}</view>
+
+            <view class="update">
+            <view class="reduce" bindtap="reducevalue" data-id="{{index}}">-</view>
+            <view class="value">{{item.num}}</view>
+            <view class="add" bindtap="addvalue" data-id="{{index}}">+</view>
+            </view>
+        </view>
+    </view>
+    <view class="remove" bindtap="removechat" data-id="{{index+1}}" >删除</view>
+</view>
+
+<view class="bottom">
+    <view class="all">
+        <icon wx:if="{{selectAll}}" type="success"  bindtap="sumAll" ></icon>
+        <icon wx:else type="circle" bindtap="selectAll" bindtap="sumAll"></icon>
+        <text class="check-all">{{checkAllText}}全选</text>
+    </view>
+    <view class="sum">
+        <text class="he">合计</text>
+        <text>{{totalPrice}}</text>
+        <text class="small">不含运费</text>
+    </view>
+    <view class="banlance" wx:if="{{selectButton}}"  bindtap="jiesuan">结算({{totalPrice}})</view>
+    <view class="banlance-gray banlance" wx:else>结算({{totalPrice}})</view>
+</view>

@@ -1,0 +1,37 @@
+/* pages/about/about.wxss */
+page {
+    background-color: #f1f1f1;
+    padding: 20rpx;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.btn {
+    height: 1000rpx;
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    text-align: center;
+    margin-top: 50rpx;
+    background-color: #fff;
+    padding: 50rpx;
+}
+
+.img {
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    border: 1rpx solid #aaa;
+    margin: 0 auto;
+}
+.img image{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+.name{
+    margin-top: 50rpx;
+    color: green;
+}

@@ -1,0 +1,5 @@
+/* pages/producType/producType.wxss */
+@import  '../../teps/foodlist/foodlist.wxss';
+button{
+    margin-top: 20rpx;
+}

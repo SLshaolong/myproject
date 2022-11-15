@@ -1,0 +1,83 @@
+/* pages/produtedetail/produtedetail.wxss */
+page {
+    background-color: #f1f1f1;
+}
+
+.jieshao {
+    background-color: #fff;
+    padding: 20rpx;
+    margin: 20rpx;
+    font-size: 32rpx;
+    font-weight: bold;
+
+}
+
+.ping {
+    background-color: #fff;
+    padding: 20rpx;
+    color: #999;
+    font-size: 26rpx;
+    margin-bottom: 20rpx;
+}
+
+.productinfo {
+    background-color: #fff;
+    padding: 16rpx;
+    margin-bottom: 130rpx;
+}
+
+.xinxi {
+    color: #999;
+    font-size: 26rpx;
+    margin-bottom: 20rpx;
+}
+
+.desc {
+    font-size: 28rpx;
+    line-height: 44rpx;
+    color: #666;
+}
+
+.img {
+    width: 100%;
+}
+
+.shopping {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    border-top: 1rpx solid #f9f9f9;
+    padding: 20rpx;
+    background-color: #fff;
+    color: #fff;
+}
+.shop-img {
+    flex: 1;
+    text-align: right;
+}
+.shop-img image {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+}
+.go-shoping{
+    width: 160rpx;
+    text-align: center;
+    background-color: red;
+    font-size: 28rpx;
+    padding: 16rpx 0;
+    border-radius: 10rpx 0 0 10rpx;
+    text-align: center;
+}
+
+.buy-now{
+    width: 160rpx;
+    background-color: pink;
+    font-size: 28rpx;
+    padding: 16rpx 0;
+    border-radius: 0 10rpx 10rpx 0;
+    text-align: center;
+}

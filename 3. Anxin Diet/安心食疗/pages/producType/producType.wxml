@@ -1,0 +1,6 @@
+<!--pages/producType/producType.wxml-->
+<import src="../../teps/foodlist/foodlist.wxml"></import>
+
+<view wx:for="{{list}}" wx:key="id" bindtap="produtedetail" data-id="{{item.id}}" >
+    <template is="foodlist" data="{{item}}"></template>
+</view>

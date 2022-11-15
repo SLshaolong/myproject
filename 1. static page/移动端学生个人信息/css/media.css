@@ -1,0 +1,80 @@
+@media screen and (max-width:768px) {
+    body {
+        height: auto !important;
+    }
+    .left {
+        float: none !important;
+        width: 100% !important;
+        min-height: 60px;
+        position: relative;
+    }
+    .left .list {
+        display: none;
+    }
+    .left:hover .list {
+        display: block;
+    }
+    .left:hover .datsa {
+        display: none !important;
+    }
+    .datsa {
+        position: absolute !important;
+        display: block !important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        font-size: 2rem;
+    }
+    .right {
+        width: 100%;
+    }
+    .r-list>li:nth-child(1) .i-left {
+        width: 100% !important;
+        float: none !important;
+    }
+    .r-list>li:nth-child(1) .i-right {
+        width: 100% !important;
+        float: none !important;
+    }
+    .i-right li {
+        text-align: center;
+    }
+    /* .i-right li p {
+        top: 1rem !important;
+    } */
+    .i-right li div.it {
+        position: relative !important;
+    }
+    .t-left,
+    .t-right {
+        width: 100% !important;
+    }
+    .imgbox {
+        width: 40% !important;
+    }
+    .r-list>li:nth-child(2) table,
+    .r-list>li:nth-child(3) table {
+        margin-top: 0 !important;
+    }
+    .r-list>li:nth-child(5) {
+        min-height: 500px;
+        /* height: 768px !important; */
+    }
+    .r-list>li:nth-child(5) select {
+        width: 80% !important;
+    }
+    .ct {
+        width: 100% !important;
+        float: none;
+    }
+    .show {
+        width: 100% !important;
+        float: none;
+    }
+    .ift {
+        display: block;
+    }
+    .fe {
+        height: 500px !important;
+    }
+}

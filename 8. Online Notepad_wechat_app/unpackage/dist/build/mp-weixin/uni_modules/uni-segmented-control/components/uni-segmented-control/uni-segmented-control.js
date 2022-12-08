@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control"],{"53fc":function(t,e,n){},"5cf4":function(t,e,n){"use strict";n.r(e);var r=n("a214"),u=n.n(r);for(var c in r)"default"!==c&&function(t){n.d(e,t,(function(){return r[t]}))}(c);e["default"]=u.a},"67cc":function(t,e,n){"use strict";n.r(e);var r=n("ab82"),u=n("5cf4");for(var c in u)"default"!==c&&function(t){n.d(e,t,(function(){return u[t]}))}(c);n("ec1f");var i,o=n("f0c5"),a=Object(o["a"])(u["default"],r["b"],r["c"],!1,null,"0052eeee",null,!1,r["a"],i);e["default"]=a.exports},a214:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var r={name:"UniSegmentedControl",emits:["clickItem"],props:{current:{type:Number,default:0},values:{type:Array,default:function(){return[]}},activeColor:{type:String,default:"#2979FF"},styleType:{type:String,default:"button"}},data:function(){return{currentIndex:0}},watch:{current:function(t){t!==this.currentIndex&&(this.currentIndex=t)}},created:function(){this.currentIndex=this.current},methods:{_onClick:function(t){this.currentIndex!==t&&(this.currentIndex=t,this.$emit("clickItem",{currentIndex:t}))}}};e.default=r},ab82:function(t,e,n){"use strict";var r;n.d(e,"b",(function(){return u})),n.d(e,"c",(function(){return c})),n.d(e,"a",(function(){return r}));var u=function(){var t=this,e=t.$createElement;t._self._c},c=[]},ec1f:function(t,e,n){"use strict";var r=n("53fc"),u=n.n(r);u.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control-create-component',
+    {
+        'uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("67cc"))
+        })
+    },
+    [['uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control-create-component']]
+]);

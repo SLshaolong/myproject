@@ -1,0 +1,41 @@
+.add.data-v-271beaf9 {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #fefcf4;
+}
+.add .cont.data-v-271beaf9 {
+  color: #ff0000;
+  font-size: 12px;
+  width: 50px;
+}
+.add .time.data-v-271beaf9,
+.add .desc.data-v-271beaf9,
+.add .title.data-v-271beaf9 {
+  background-color: rgba(0, 255, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 20px;
+  color: #578862;
+}
+.add .time input.data-v-271beaf9,
+.add .desc input.data-v-271beaf9,
+.add .title input.data-v-271beaf9 {
+  font-size: 14px;
+}
+.add .time textarea.data-v-271beaf9,
+.add .desc textarea.data-v-271beaf9,
+.add .title textarea.data-v-271beaf9 {
+  font-size: 14px;
+}
+button.data-v-271beaf9 {
+  margin-top: 20px;
+  font-size: 14px;
+  border-radius: 15px;
+  border: 1px solid #77a15f;
+  background-color: #639148;
+  color: #fff;
+}
+

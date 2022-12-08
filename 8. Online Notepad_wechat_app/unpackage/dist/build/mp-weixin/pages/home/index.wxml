@@ -1,0 +1,1 @@
+<view class="container _div"><view class="header">在线记事本<view class="logo _div">{{''+(name?name:"a")+''}}</view><button class="btn" size="mini" data-event-opts="{{[['tap',[['resetbtn',['$event']]]]]}}" bindtap="__e">退出</button></view><block wx:if="{{flag}}"><list vue-id="6b3d36ea-1" bind:__l="__l"></list></block><bottom-v vue-id="6b3d36ea-2" bind:__l="__l"></bottom-v></view>

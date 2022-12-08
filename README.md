@@ -24,3 +24,6 @@
     1. axios
     2. pinia
     3. vant3.x
+8. 基于uniapp vue2 开发的在线记事本
+    1. vuex
+    2. router

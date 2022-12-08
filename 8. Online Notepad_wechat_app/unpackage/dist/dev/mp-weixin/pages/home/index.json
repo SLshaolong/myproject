@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "龙城在线笔记本",
+  "usingComponents": {
+    "list": "/components/List",
+    "bottom-v": "/components/BottomV"
+  }
+}

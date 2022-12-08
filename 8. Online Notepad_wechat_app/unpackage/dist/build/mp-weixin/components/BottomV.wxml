@@ -1,0 +1,1 @@
+<view class="containers _div data-v-94e10b64"><view class="next add _div data-v-94e10b64"><button data-event-opts="{{[['tap',[['nextPage',['$event']]]]]}}" bindtap="__e" class="data-v-94e10b64">加载下一页</button></view><view class="add data-v-94e10b64"><button data-event-opts="{{[['tap',[['addList',['$event']]]]]}}" bindtap="__e" class="data-v-94e10b64">增加</button></view></view>

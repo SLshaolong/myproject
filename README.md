@@ -27,3 +27,9 @@
 8. 基于uniapp vue2 开发的在线记事本
     1. vuex
     2. router
+9. 基于vue3.x 开发的隧道管理系统
+    1. pinia
+    2. element-plus
+    3. Echarts
+    4. router
+    5. axios

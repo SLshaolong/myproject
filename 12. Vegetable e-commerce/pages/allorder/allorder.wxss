@@ -1,0 +1,43 @@
+/* pages/allorder/allorder.wxss */
+page{
+    background-color: #f5f5f5;
+}
+.container{
+    padding-top: 92rpx;
+    background-color: #fff;
+    
+}
+.top_title{
+padding: 18rpx 32rpx;
+text-align: center;
+position: relative;
+font-weight: 600;
+}
+.top_title image{
+    width: 32rpx;
+    height: 32rpx;
+    vertical-align: middle;
+    position: absolute;
+    left: 32rpx;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.viewChange{
+    display: flex;
+    padding: 32rpx;
+    padding-bottom: 0;
+    
+}
+.viewChange>view{
+    width: 25%;
+    text-align: center;
+    padding-bottom: 32rpx;
+    font-size: 24rpx;
+    font-weight: 600;
+    
+}
+.viewChange  .active{
+    border-bottom:  2px solid #40AA54;
+    color: #40AA54;
+}
+@import '../../utils/datalist/datalist.wxss';

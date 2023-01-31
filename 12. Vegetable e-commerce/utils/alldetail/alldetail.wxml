@@ -1,0 +1,36 @@
+<template name="order">
+    <view class="container">
+        <view class="top">
+            订单详情
+            <view class="return" bindtap="returnBack">
+                <image src="../../assets/back.png"></image>
+            </view>
+        </view>
+        <view class="{{allStyle}}">
+            <view class="title {{styleTitle}}">
+                {{title}}
+            </view>
+            <view class="order">
+                <text class="name">订单编号</text>
+                <text>{{orderId}}</text>
+            </view>
+            <view class="order">
+                <text class="name">下单时间</text>
+                <text>{{date}}</text>
+            </view>
+            <view class="order" wx:if="{{readyPush}}">
+                <text class="name">付款时间</text>
+                <text>{{readyDate}}</text>
+            </view>
+            <view class="order">
+                <text class="name">发货时间</text>
+                <text class="green">{{time}}</text>
+            </view>
+            <view class="order">
+                <text class="name">收货地址</text>
+                <text >{{adress}}</text>
+            </view>
+        </view>
+    </view>
+
+</template>

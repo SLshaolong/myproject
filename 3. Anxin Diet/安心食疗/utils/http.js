@@ -5,7 +5,7 @@ function http({url,method,data,loading,success,fail}) {
         })
     };
     wx.request({
-      url: 'http://iwenwiki.com:3002/api/'+url,
+      url: 'baseurl'+url,
       data,
       method,
       success:res=>{

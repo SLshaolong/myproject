@@ -1,0 +1,5 @@
+<template name="return">
+    <view class="back" bindtap="returnBack">
+       <image src="../../assets/back.png"></image> 
+    </view>
+</template>

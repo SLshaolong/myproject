@@ -1,0 +1,72 @@
+<!--pages/searchview/searchview.wxml-->
+<view class="container">
+    <view class="collect_top">
+        <view class="top_title">
+            <image src="../../assets/back.png" bindtap="backUp" />
+            <view class="inputbox">
+                <input type="text" placeholder="搜索商品" bindinput="getInput" bindblur="getInput" placeholder-class="placeholder" />
+            </view>
+        </view>
+    </view>
+
+    <view class="oldInfoBox" wx:if='{{list.length<=0}}'>
+        <view class="topinfo">
+            <view class="info">历史信息</view>
+            <view class="info_util" bindtap="removeList">
+                <image src="../../assets/Frame(10).png"></image>
+                清空历史
+            </view>
+        </view>
+        <view class="allinfoBox">
+            <view class="box" wx:for="{{oldInfoList}}" wx:key="index" bindtap="choiceInfo" data-info="{{item}}" bindtap="changeInfo">
+                {{item}}
+            </view>
+        </view>
+    </view>
+
+    <view class="searchInfo" wx:else>
+        <view class="search_top">
+            <view>销量</view>
+            <view>价格 <image src="../../assets/Frame(19).png"></image>
+            </view>
+        </view>
+        <view class="searchChoice">
+            <view class="choice_box {{index==ClassIndex?'active':''}}" wx:for="{{titleList}}" wx:key="index" bindtap="checkDetail" data-index='{{index}}'>{{item}}</view>
+        </view>
+        <view class="bigBoxs">
+            <view class="box_detials" wx:for="{{list}}" wx:key="index">
+                <view class="box_img">
+                    <image src="{{item.img}}"></image>
+                </view>
+                <view class="box_detail">
+                    <view class="box_title">
+                        <text class="title_name">{{item.activeName}}</text>
+                        <text class="title_detail">{{item.title}}</text>
+                    </view>
+                    <view class="box_powerlshell" wx:if='{{item.shell||item.goodrice}}'>
+                        月售{{item.shell}}份 好评率{{item.goodrice}}%
+                    </view>
+                    <view class="box_active" wx:if="{{item.shalecore || item.subActive}}">
+                        <text>{{item.shalecore}}</text>
+                        <text>{{item.subActive}}</text>
+                    </view>
+                    <view class="box_price">
+                        <view class="price_det">
+                            ￥ <view class="priceDetail">{{item.price}}</view>
+                        </view>
+                        <view class="box_util">
+                            <view class="even" wx:if="{{item.value>0}}" bindtap="changeShell" data-name="even"data-index="{{index}}" >
+                                <image src="../../assets/Frame(14).png" ></image>
+                            </view>
+                            <input type="text" value="{{item.value}}" wx:if="{{item.value>0}}" bindinput="changeShell"  data-index="{{index}}" bindblur="changeShell" />
+                            <view class="add" bindtap="changeShell" data-name="add" data-index="{{index}}" >
+                                <image src="../../assets/Frame(16).png"></image>
+                            </view>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

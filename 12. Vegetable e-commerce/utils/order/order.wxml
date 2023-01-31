@@ -1,0 +1,10 @@
+<template name="order">
+    <view class="orderCar" >
+        <image src="{{carImg}}">
+            <text class="sub">{{fontnum}}</text>
+        </image>
+       <view class="txt">
+        {{text}}
+       </view>
+    </view>
+</template>

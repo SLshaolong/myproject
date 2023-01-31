@@ -1,0 +1,89 @@
+
+.container {
+    background-color: #F5F5F5;
+    height: 100%;
+}
+
+.top {
+    padding-top: 92rpx;
+    text-align: center;
+    color: rgba(0, 0, 0, .85);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 22rpx;
+    background-color: #fff;
+    margin-bottom: 16rpx;
+}
+
+.return {
+    position: absolute;
+    width: 32rpx;
+    height: 32rpx;
+    bottom: 22rpx;
+    left: 32rpx;
+}
+
+.return image {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.state1,.state {
+    background-color: #fff;
+    padding: 32rpx;
+}
+
+.state1 .title ,.state .title {
+    font-size: 40rpx;
+    
+    font-weight: 500;
+}
+.orange{
+    color: #ED7B2F;
+}
+.dark{
+    color:rgba(0, 0, 0, .25) ;
+}
+.state1>view {
+    padding-bottom: 16rpx;
+    margin-top: 16rpx;
+    border-bottom: 1rpx solid rgba(0, 0, 0, .25);
+}
+.state>view{
+    padding-bottom: 32rpx;
+    margin-top: 32rpx;
+    border-bottom: 1rpx solid rgba(0, 0, 0, .2);
+}
+.state1>view:first-child,
+.state>view:first-child {
+    margin-top: 0;
+}
+
+.state1>view:last-child,
+.state>view:last-child
+ {
+    border: none;
+    padding-bottom: 0;
+}
+
+.state1 .order,.state .order {
+    font-size: 28rpx;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.state1 .order .name,.state .order .name {
+    margin-right: 32rpx;
+    color: rgba(0, 0, 0, .45);
+    word-break: keep-all;
+}
+
+.state1 .order .green,.state .order .green {
+    color: #40AA54;
+}
+.green{
+    color: #40AA54;
+}

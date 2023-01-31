@@ -1,0 +1,40 @@
+<!--pages/forget/forget.wxml-->
+<import src="../../utils/back/back.wxml"></import>
+<view class="container">
+    <template is="return" />
+    <view class="boxshadow">
+    </view>
+    <view class="containers-box">
+        <view class="title">
+            确认密码
+        </view>
+        <view class="subtitle">
+            密码由6-20个英文字母，数字或者符号组成
+        </view>
+        <view class="inputbox">
+            <view class="box">
+                <view class="boxtitle">
+                    <view class="text">密码</view>
+                </view>
+                <view class="inputbox">
+                    <input type="{{passtype}}" bindfocus="enterFocus" bindblur="leverFocus" value="{{password}}" bindinput="enterpass"/>
+                    <image wx:if="{{passwordBtn}}" src="{{passwordshow?'../../assets/Frame(1).png':'../../assets/Frame(2).png'}}" bindtap="changeBtn"></image>
+                </view>
+            </view>
+
+            <view class="box">
+                <view class="inputbox">
+                    <input type="{{repasstype}}" value="{{repassword}}" placeholder="请输入密码" bindfocus="reenterFocus" bindblur="releverFocus" bindinput="reenterpass"/>
+                    <image wx:if="{{repasswordBtn}}" src="{{!repasswordshow?'../../assets/Frame(1).png':'../../assets/Frame(2).png'}}" bindtap="rechangeBtn"></image>
+
+                </view>
+            </view>
+        </view>
+
+
+
+        <view class="login">
+            <button size='default' bindtap="enterChange">确认修改</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,34 @@
+<template name="datalist">
+    <view class="order_box" bindtap="moveDetail" data-id="{{id}}">
+        <view class="order_box_top">
+            订单编号:{{orderId}}
+            <view class="order_box_status {{style}} {{flag}}">
+                {{statusInfo}}
+            </view>
+        </view>
+        <view class="orderbox">
+            <view class="order_box_order" wx:for="{{orderList}}" wx:key="index">
+                <view class="orderImg">
+                    <image></image>
+                </view>
+                <view class="orderDetail">
+                    <view class="detail_title">{{item.title}}</view>
+                    <view class="detail_sub">￥ <view class="subFirst">{{item.price}}</view> <text class="subtitle">{{item.passPrice}}</text></view>
+                </view>
+                <view class="orderSize">
+                    共{{item.allSize}}件
+                </view>
+            </view>
+        </view>
+        <view class="order_all">
+            <view class="allPrice">总计</view>
+            <view class="allNum">{{allPrice}}</view>
+            <view class="removeNum">{{removeNum}}</view>
+
+            <view class="right">
+                <view class="reomove" wx:if="{{style!='dark'}}" bindtap="getNumToo">取消订单</view>
+                <button class="{{style=='dark'?'dark':'green'}}" bindtap="{{style=='dark'?'removeDetail':'enterallready'}}">{{style=="dark"?'再来一单':'确认收货'}}</button>
+            </view>
+        </view>
+    </view>
+</template>

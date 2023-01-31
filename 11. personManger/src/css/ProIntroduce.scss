@@ -1,0 +1,27 @@
+.Produce{
+    background-color: beige;
+    padding: 20px;
+    h1{
+        font-size: 30px;
+        text-align: center;
+
+    }
+    p{
+        font-size: 18px;
+        font-weight: 600;
+        background-color: beige;
+        letter-spacing: 2px;
+        margin-top: 10px;
+        font-family: 'kaiti';
+    }
+    a{
+        color: transparent;
+        background-image:linear-gradient(to right, #00d9e2, #3900f0);
+        -webkit-background-clip: text;
+        background-clip: text;
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 20px;
+
+    }
+}

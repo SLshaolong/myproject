@@ -32,7 +32,7 @@ Page({
     onLoad: function (options) {
         // 获取轮播图
         wx.request({
-            url: 'http://iwenwiki.com:3002/api/banner',
+            url: 'base/banner',
             success: res => {
                 const allquset = res.data.data
                 this.setData({
@@ -47,7 +47,7 @@ Page({
         // 获取每日推荐数据
 
         wx.request({
-            url: 'http://iwenwiki.com:3002/api/indexlist',
+            url: 'base/indexlist',
             success: res => {
                 this.setData({
                     listarr: res.data.data

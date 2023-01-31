@@ -1,0 +1,54 @@
+<view class="container">
+    <view class="collect_top">
+        <view class="top_title">
+            <image src="../../assets/back.png" bindtap="backUp"></image>编辑/新增收货地址
+        </view>
+    </view>
+
+    <view class="edit">
+        <view class="edit_top">
+            <view class="edit_title">联系人信息</view>
+            <view class="edit_input"><input type="text" placeholder="姓名" bindinput="changeData" bindblur="changeData" data-name="name" value="{{names}}" /></view>
+        </view>
+        <view class="edit_lianxi">
+            <view class="edit_name">联系方式</view>
+            <view class="edit_content"><input type="text" bindinput="changeData" bindblur="changeData" placeholder="手机号" data-name="telphone" value="{{telphone}}" /></view>
+        </view>
+        <view class="edit_lianxi">
+            <view class="edit_name">省市区</view>
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                <view class="picker">
+                    <view class="edit_content"><text>{{region[0]}}{{region[1]}}{{region[2]}}</text>
+                        <image src="../../assets/down.png"></image>
+
+                    </view>
+                </view>
+            </picker>
+
+        </view>
+        <view class="edit_lianxi">
+            <view class="edit_name">详细地址</view>
+            <view class="edit_content"><input type="text" bindinput="changeData" bindblur="changeData" placeholder="详细地址" data-name="detailAdress" value="{{detailAdress}}" /></view>
+        </view>
+        <view class="edit_lianxi">
+            <view class="edit_name">公司名称</view>
+            <view class="edit_content"><input type="text" bindinput="changeData" bindblur="changeData" placeholder="公司名称" data-name="company" value="{{company}}" /></view>
+        </view>
+        <view class="edit_util">
+            <view class="util_default">
+                <icon wx:if="{{isdefault}}" type="success" size="16" bindtap="changeSelect"></icon>
+                <icon wx:else type="circle" size="16" bindtap="changeSelect"></icon>
+                设为默认
+            </view>
+            <view class="util_button" bindtap="clearBoth">
+                <button>清空</button>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+<view class="btn" bindtap="resolveData">
+    <button>保存</button>
+</view>

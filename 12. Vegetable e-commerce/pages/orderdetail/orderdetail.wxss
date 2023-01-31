@@ -1,0 +1,144 @@
+/* pages/orderdetail/orderdetail.wxss */
+@import '../../utils/alldetail/alldetail.wxss';
+page{
+    background-color: #f5f5f5;
+}
+.boxcontainer{
+    background-color: #f5f5f5;
+    padding-top: 16rpx;
+}
+.orderbox{
+    background-color: #fff;
+    padding: 32rpx;
+}
+.order-box{
+    display: flex;
+    position: relative;
+    
+}
+.order-box .img{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 4rpx;
+    background-color: #D9D9D9;
+    margin-right: 16rpx;
+}
+.order-box .img image{
+    width: 100%;
+    height: 100%;
+}
+.order-box .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.detail-title{
+    flex: 1;
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, .85);
+    font-weight: 600;
+    white-space: nowrap;
+    width: 450rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.detail-size{
+    color: rgba(0, 0, 0, .45);
+    font-size: 24rpx;
+}
+.detail-price{
+    position: absolute;
+    right: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.orderlist{
+    padding:16rpx 0;
+    border-bottom: 1rpx solid rgba(0, 0, 0, .2);
+}
+.orderlist:first-child{
+    padding-top: 0;
+}
+.orderlist:last-child{
+    border: none;
+}
+.all{
+    background-color: #fff;
+    padding: 0 32rpx 32rpx;
+
+}
+.all-box{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16rpx;
+}
+.red{
+    color: #E34D59;
+}
+.reallypay{
+    justify-content:flex-end;
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.really-title{
+    font-size: 28rpx;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .85);
+    margin-right: 16rpx;
+
+}
+.really-price{
+    font-size: 36rpx;
+    color: #E34D59;
+    font-weight: 600;
+}
+.really-price text{
+    font-size:28rpx ;
+}
+.tab{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100rpx;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .25);
+    display: flex;
+    padding: 32rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+.tabImg{
+    color: #40AA54;
+    font-size: 28rpx;
+}
+.tabImg image{
+    width: 24rpx;
+    height: 24rpx;
+}
+.tabBtn{
+    width: 160rpx;
+    height: 64rpx;
+    border: 1rpx solid rgba(0, 0, 0, .08);
+    border-radius: 4rpx;
+}
+.tabBtn button{
+    border-radius: 4rpx;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-size: 24rpx;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.green button{
+    color: #40AA54;
+}
+.green {
+    border-color:#40AA54 ;
+}

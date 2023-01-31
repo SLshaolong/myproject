@@ -1,0 +1,10 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+    <view class="imgbox">
+        <image src="../../assets/Frame4189.png"></image>
+    </view>
+    <view wx:for="{{userInfo}}" wx:key="index" class="box">
+        <view class="title">{{item.title}}</view>
+        <view class="desc">{{item.desc}}</view>
+    </view>
+</view>

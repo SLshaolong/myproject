@@ -1,0 +1,88 @@
+<!--pages/mine/mine.wxml-->
+<view class="container">
+    <view class="container-top">
+        <image src="../../assets/Frame2710.png"></image>
+        <view class="title">
+            个人中心
+        </view>
+        <view class="user-info" bindtap="MoveToUser">
+            <view class="user-icon">
+                <image src="../../assets/Frame(4).png"></image>
+                <view class="imgbox">
+                    <image class="image-icon" src="../../assets/Frame(5).png"></image>
+                </view>
+            </view>
+            <view class="user-data">
+                <view class="nick">{{userInfo.username}}</view>
+                <view class="tle">{{userInfo.telphone}}</view>
+            </view>
+            <view class="utils">
+                <image src="../../assets/Frame(6).png"></image>
+            </view>
+        </view>
+    </view>
+    <!-- 我的钱包布局 -->
+    <view class="wallentcontainer">
+        <view class="topimg">
+            <image src="../../assets/Frame(24).png"></image>
+        </view>
+        <view class="mywallent" bindtap="gotoWallent">
+            <view class="text">我的钱包</view>
+            <image src="../../assets/Frame(3).png"></image>
+        </view>
+        <view class="wallentData">
+            <text>￥</text>{{mywallentData}}
+        </view>
+        <view class="lunchwallent">
+            <view class="lunchbox">
+                <view class="subTitle">
+                    近七日消费
+                </view>
+                <view class="beforeData">
+                    {{beforeWeekData}}
+                </view>
+            </view>
+            <view class="lunchbox">
+                <view class="subTitle">
+                    累计消费
+                </view>
+                <view class="beforeData">
+                    {{alreadyData}}
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <!-- 我的订单布局 -->
+    <import src="../../utils/order/order.wxml" />
+    <view class="ordercontainer">
+        <view class="mywallent" data-id="0" bindtap="gotoAllOrder">
+            <view class="text">我的订单</view>
+            <image src="../../assets/Frame(3).png"></image>
+        </view>
+        <view class="orderbox">
+            <view wx:for="{{orderData}}" wx:key="index" data-id="{{item.id}}" bindtap="gotoAllOrder">
+                <template is="order" data="{{...item}}" />
+            </view>
+
+        </view>
+
+    </view>
+
+    <!-- 其他布局 -->
+    <view class="other">
+        <view class="info" bindtap="moveCollect">
+            <view class="text">我的收藏</view>
+            <view class="subtext">辅助文字</view>
+            <view class="imgbox">
+                <image src="../../assets/Frame(3).png"></image>
+            </view>
+        </view>
+        <view class="info" bindtap="moveAdress">
+            <view class="text">收货地址</view>
+            <view class="imgbox">
+                <image src="../../assets/Frame(3).png"></image>
+            </view>
+        </view>
+    </view>
+</view>

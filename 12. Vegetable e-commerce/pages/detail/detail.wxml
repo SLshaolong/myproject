@@ -1,0 +1,53 @@
+<view class="container">
+    <view class="collect_top">
+        <view class="top_title">
+            <image src="../../assets/back.png" bindtap="backUp"></image>商品详情
+        </view>
+    </view>
+    <view class="detailImage">
+
+        <swiper indicator-active-color='#fff' indicator-dots indicator-color='rgb(0,0,0,.4)'>
+            <swiper-item>
+                <image src="{{img?img:'../../assets/cj.png'}}"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="{{img?img:'../../assets/cj.png'}}"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="{{img?img:'../../assets/cj.png'}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <view class="detail_detials">
+        <view class="detail_price">
+            ￥ <view class="price">{{price}}</view>
+            <view class="deletePrice" wx:if="{{deleteprice}}">￥{{deleteprice}}</view>
+        </view>
+        <view class="detail_name">
+            <view class="title">{{title}}</view>
+            <view class="fav" bindtap="checkFav">
+                <image src="../../assets/Frame(22).png" wx:if="{{fav}}"></image>
+                <image src="../../assets/Frame(21).png" wx:else></image>
+                收藏
+            </view>
+        </view>
+        <view class="detail_desc">
+            {{info}}
+        </view>
+        <view class="detail_class">
+            <view class="activeName">{{activeName}}</view>
+            <view class="shalecore">{{shalecore}}</view>
+            <view class="sub_active">{{subActive}}</view>
+        </view>
+        <view class="detail_info">
+            销量{{shaleNum}} 库存{{all}}
+        </view>
+    </view>
+
+
+    <view class="utilBtn">
+        <button bindtap="addCart">加入购物车</button>
+        <button bindtap="shaleNow">立即购买</button>
+    </view>
+</view>

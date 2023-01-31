@@ -1,0 +1,18 @@
+.Layout{
+    display: flex;
+    height: 100%;
+    .slider-left{
+        width: 256px;
+        height: 100%;
+        .ant-menu{
+            height: 100%;
+        }
+    }
+    .rightMain{
+        flex: 1;
+        background-color: #fefefe;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+}

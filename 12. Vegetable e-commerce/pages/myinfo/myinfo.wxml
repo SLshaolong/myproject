@@ -1,0 +1,37 @@
+<!--pages/myinfo/myinfo.wxml-->
+<import src="../../utils/back/back.wxml"></import>
+<view class="container">
+    <view class="top">
+        <template is="return" />
+    </view>
+    <view class="title">个人信息</view>
+</view>
+<view class="user">
+    <view class="userIcon">
+        <view class="usertext">用户头像</view>
+        <view class="usericon"></view>
+        <view class="infoBtn">
+        <image src="../../assets/into.png"></image></view>
+    </view>
+    <view class="userIcon">
+        <view class="usertext">昵称</view>
+        <view class="userinfo">{{username}}</view>
+        <view class="infoBtn">
+        <image src="../../assets/into.png"></image></view>
+    </view>
+    <view class="userIcon">
+        <view class="usertext">手机号</view>
+        <view class="userinfo">{{telphone}}</view>
+        <view class="infoBtn">
+        <image src="../../assets/into.png"></image></view>
+    </view>
+</view>
+
+<view class="change">
+<view class="changebox" bindtap="moveToChang">
+<view class="text">支付密码</view>
+<view class="subtext">去修改</view>
+<view class="infoBtn" >
+        <image src="../../assets/into.png"></image></view>
+</view>
+</view>

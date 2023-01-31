@@ -1,0 +1,40 @@
+<!--pages/forget/forget.wxml-->
+<import src="../../utils/back/back.wxml"></import>
+<view class="container">
+    <template is="return" />
+    <view class="boxshadow">
+    </view>
+    <view class="containers-box">
+        <view class="title">
+            忘记密码
+        </view>
+        <view class="subtitle">
+            请输入手机号码和验证码找回密码
+        </view>
+        <view class="inputbox">
+            <view class="box">
+                <view class="boxtitle">
+                    <view class="text">手机号</view>
+                </view>
+                <view class="inputbox">
+                    <input type="text" bindfocus="enterFocus" bindblur="leverFocus" value="{{telValue}}" bindinput="telInput" bindblur="telInput"  />
+                    <image wx:if="{{clearBtn}}" src="../../assets/Frame.png" bindtap="clearVal"></image>
+                </view>
+            </view>
+
+            <view class="box">
+                <view class="inputbox">
+                    <input type="text" bindinput="yanzhengInput" bindblur="yanzhengInput" value="{{yanzhengVal}}" placeholder="请输入验证码"/>
+                    <view class="yanzheng" bindtap="getYanzheng">获取验证码</view>
+
+                </view>
+            </view>
+        </view>
+
+    
+
+        <view class="login">
+            <button size='default' bindtap="nextBtn">下一步</button>
+        </view>
+    </view>
+</view>

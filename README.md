@@ -33,3 +33,16 @@
     3. Echarts
     4. router
     5. axios
+10. 基于vue3.x开发web3.0 ninja
+    1. web3.0
+    2. element plus
+    3. vant
+    4. axios
+11. 基于react的个人项目管理系统
+    1. axios
+    2. antd
+    3. wangeditor
+    4. redux
+    5. react-router-dom
+12. 微信原生小程序蔬菜电商
+    

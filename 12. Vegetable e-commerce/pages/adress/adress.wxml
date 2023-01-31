@@ -1,0 +1,40 @@
+<view class="container">
+    <view class="collect_top">
+        <view class="top_title">
+            <image src="../../assets/back.png" bindtap="backUp"></image>收货地址
+        </view>
+    </view>
+
+    <view class="adressList" wx:for="{{list}}" wx:key="index">
+        <view class="adress_top">
+            <view class="adress_name">{{item.name}}</view>
+            <view class="adress_phone">{{item.phone}}</view>
+        </view>
+        <view class="adress_detail">
+            {{item.adress}}
+        </view>
+
+        <view class="adress_utils">
+            <view class="adress_checkbox">
+                <icon size="16" type="success" wx:if="{{defaultVal==index}}" bindtap="checkBxo" data-index="{{index}}" ></icon>
+                <icon size="16" type="circle" wx:else bindtap="checkBxo" data-index="{{index}}" ></icon>
+                设为默认
+            </view>
+            <view class="rightbox">
+                <view class="uitl_deit le" bindtap="moveToadd" data-id="{{item.id}}">
+                    <image src="../../assets/Frame(9).png"></image>
+                    编辑
+                </view>
+                <view class="uitl_deit" bindtap="removeThis">
+                    <image src="../../assets/Frame(10).png"></image>
+                    删除
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+    <view class="btn" bindtap="moveToadd" >
+        <button>+新增地址</button>
+    </view>
+</view>

@@ -1,0 +1,29 @@
+.orderCar {
+    position: relative;
+    text-align: center;
+}
+.orderCar image .sub {
+    position: absolute;
+    left: 30rpx;
+    top: -15rpx;
+    background-color: #E34D59;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5rpx;
+    z-index: 1;
+    font-size: 20rpx;
+    font-weight: 600;
+}
+.orderCar image {
+    text-align: center;
+    width: 48rpx;
+    height: 48rpx;
+    position: relative;
+    overflow: visible;
+
+}
+.orderCar .txt {
+    font-weight: 600;
+    font-size: 24rpx;
+    margin-top: 10rpx;
+}

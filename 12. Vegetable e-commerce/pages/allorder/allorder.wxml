@@ -1,0 +1,13 @@
+<!--pages/allorder/allorder.wxml-->
+<view class="container">
+    <view class="top_title">
+        <image src="../../assets/back.png" bindtap="backUp"></image>全部订单
+    </view>
+    <view class="viewChange">
+        <view wx:for="{{menus}}" wx:key="index" class="{{current==index?'active':''}}" bindtap="changeTap" data-id="{{index}}">{{item}}</view>
+    </view>
+</view>
+<import src="../../utils/datalist/datalist.wxml"/>
+<view class="allpages">
+    <template is="datalist" wx:for="{{list}}" data="{{...item}}" wx:key="index"></template>
+</view>

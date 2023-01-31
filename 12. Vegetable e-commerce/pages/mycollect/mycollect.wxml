@@ -1,0 +1,51 @@
+<view class="container">
+    <view class="collect_top">
+        <view class="top_title">
+            <image src="../../assets/back.png" bindtap="backUp"></image>我的收藏
+        </view>
+    </view>
+
+    <view class="collect_box" wx:for="{{list}}" wx:key="index" data-id="{{item.id}}"
+    data-index="{{index}}" bindtap="gotoDetail"
+    >
+        <view class="box_checkbox">
+            <icon wx:if="{{item.selected}}" type="success" catchtap="selectList" data-index="{{index}}" size="16"></icon>
+            <icon wx:else type="circle" color="#999" catchtap="selectList" data-index="{{index}}" size="16"></icon>
+        </view>
+        <view class="box_img">
+            <image src="{{item.img}}"></image>
+        </view>
+        <view class="box_detail">
+            <view class="box_title">
+                <text class="title_name">{{item.activeName}}</text>
+                <text class="title_detail">{{item.title}}</text>
+            </view>
+            <view class="box_powerlshell" wx:if="{{item.saleMouth || item.repution}}">
+                月售{{item.saleMouth}}份 好评率{{item.repution}}%
+            </view>
+            <view class="box_active" wx:if="{{item.discount || item.category }}">
+                <text>{{item.discount}}</text>
+                <text>{{item.category}}</text>
+            </view>
+            <view class="box_price">
+                ￥ <view class="priceDetail">{{item.price}}</view>
+            </view>
+
+        </view>
+    </view>
+
+
+    
+</view>
+<view class="bottombar">
+        <view class="allselect">
+            <icon wx:if="{{selectAll}}" type="success"  data-index="{{index}}" 
+            bindtap='selectAll' size="16"></icon>
+            <icon wx:else type="circle" color="#999" data-index="{{index}}" 
+            bindtap='selectAll' size="16"></icon>
+            全选
+        </view>
+        <view class="rightbtn">
+            <button bindtap="removeCurrent">删除</button>
+        </view>
+    </view>

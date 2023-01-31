@@ -1,0 +1,43 @@
+<!--pages/login/login.wxml-->
+<import src="../../utils/back/back.wxml"></import>
+<view class="containers">
+    <template is="return" />
+    <view class="boxshadow">
+    </view>
+    <view class="containers-box">
+        <view class="title">
+            欢迎使用XXXX
+        </view>
+        <view class="subtitle">
+            请使用XXX账号密码登录，即可使用
+        </view>
+        <view class="inputbox">
+            <view class="box">
+                <view class="boxtitle">
+                    <view class="text">手机号</view>
+                    <view class="title">{{telflag?'密码错误(提示文案)':''}}</view>
+                </view>
+                <view class="inputbox">
+                    <input type="text" bindfocus="enterFocus" bindblur="leverFocus" value="{{telValue}}" bindinput="inputChange"  />
+                    <image wx:if="{{clearBtn}}" src="../../assets/Frame.png" bindtap="clearVal"></image>
+                </view>
+            </view>
+
+            <view class="box">
+                <view class="inputbox">
+                    <input type="{{type}}" placeholder="请输入密码" value="{{passValue}}" bindinput="passChange" bindblur="passChange"/>
+                    <image src="{{typeChange?'../../assets/Frame(1).png':'../../assets/Frame(2).png'}}" bindtap="changePass"></image>
+
+                </view>
+            </view>
+        </view>
+
+        <view class="forgetpassword" bindtap="frogetPassword">
+            忘记密码？
+        </view>
+
+        <view class="login">
+            <button size='default' bindtap="loginBtn">登录</button>
+        </view>
+    </view>
+</view>

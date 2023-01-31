@@ -1,0 +1,222 @@
+/* pages/mine/mine.wxss */
+page{
+    background-color: #F5F5F5;
+}
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container-top {
+    width: 100%;
+    position: relative;
+}
+
+.container-top>image {
+    width: 100%;
+}
+
+.container-top .title {
+    position: absolute;
+    top: 50rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.user-info {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 220rpx;
+    padding: 0 40rpx;
+
+    align-items: center;
+}
+
+.user-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 120rpx;
+    height: 120rpx;
+    margin-right: 32rpx;
+    position: relative;
+    padding: 5rpx;
+    box-sizing: border-box;
+}
+
+.user-icon .imgbox {
+    width: 48rpx;
+    height: 48rpx;
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+.user-icon .imgbox image {
+    width: 100%;
+    height: 100%;
+}
+
+.user-icon image {
+    width: 100%;
+    height: 100%;
+}
+
+.user-data {
+    flex: 1;
+}
+
+.user-data .nick {
+    font-size: 36rpx;
+    color: #fff;
+
+}
+
+.user-data .tle {
+    font-size: 28rpx;
+    color: #fff;
+}
+
+.utils {
+    width: 48rpx;
+    height: 48rpx;
+    margin-right: 100rpx;
+}
+
+.utils image {
+    width: 100%;
+    height: 100%;
+}
+
+/* wallent */
+.wallentcontainer {
+    width: 343px;
+    background-color: #fff;
+    height: 191px;
+    position: relative;
+    top: -100rpx;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 32rpx;
+}
+
+.wallentcontainer .topimg {
+    width: 266rpx;
+    height: 266rpx;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+.wallentcontainer .topimg image {
+    width: 100%;
+    height: 100%;
+}
+
+.mywallent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mywallent .text {
+    font-size: 36rpx;
+    font-weight: 600;
+}
+
+.mywallent image {
+    width: 48rpx;
+    height: 48rpx;
+}
+
+.wallentData {
+    text-align: center;
+    margin-top: 32rpx;
+    color: #40AA54;
+    font-weight: 600;
+    font-size: 48rpx;
+}
+
+.wallentData text {
+    font-size: 28rpx;
+}
+
+.lunchwallent {
+    margin-top: 66rpx;
+    display: flex;
+    padding: 0 32rpx;
+    justify-content: space-between;
+}
+
+.lunchwallent .lunchbox .subTitle {
+    font-size: 24rpx;
+    color: #00000075;
+    margin-bottom: 16rpx;
+}
+.lunchwallent .lunchbox .beforeData{
+    font-size: 32rpx;
+    color: #40AA54;
+    font-weight: 600;
+}
+
+/* order */
+.ordercontainer{
+    width: 343px;
+    height: 136px;
+    background-color: #fff;
+    margin-top: -32px;
+    box-sizing: border-box;
+    padding: 32rpx;
+}
+@import '../../utils//order//order.wxss';
+
+.orderbox{
+    display: flex;
+    margin-top: 32rpx;
+    justify-content: space-evenly;
+}
+
+/* othner */
+.other{
+    width: 343px;
+    height: 113px;
+    background-color: #fff;
+    margin-top: 32rpx;
+    margin-bottom: 20rpx;
+    box-sizing: border-box;
+    padding: 32rpx;
+}
+.info{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding-bottom: 32rpx;
+}
+.info .imgbox image{
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.info .text{
+    font-size: 32rpx;
+}
+.info .subtext{
+    font-size: 24rpx;
+    color: #00000060;
+    position: absolute;
+    right: 40rpx;
+}

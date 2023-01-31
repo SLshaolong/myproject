@@ -1,0 +1,57 @@
+<!--pages/orderdetail/orderdetail.wxml-->
+<import src="../../utils/alldetail/alldetail"></import>
+<template is="order" data="{{...item}}" />
+<view class="boxcontainer">
+    <view class="orderbox">
+        <view class="orderlist" wx:for="{{orderList}}" wx:key="index">
+            <view class="order-box">
+                <view class="img">
+                    <image src="{{item.img}}"></image>
+                </view>
+                <view class="details">
+                    <view class="detail-title">{{item.title}}</view>
+                    <view class="detail-size">
+                        {{item.size}}份
+                    </view>
+                </view>
+                <view class="detail-price">
+                    ￥{{item.price}}
+                </view>
+            </view>
+        </view>
+
+
+    </view>
+    <view class="all">
+        <view class="all-box">
+            <text class="all-tit">合计</text>
+            <text class="all-num">￥{{allprice}}</text>
+        </view>
+        <view class="all-box">
+            <text class="all-tit">其他费用(运费等)</text>
+            <text class="all-num">￥{{otherprice}}</text>
+        </view>
+        <view class="all-box">
+            <text class="all-tit">其他费用(运费等)</text>
+            <text class="all-num">￥{{otherprice1}}</text>
+        </view>
+        <view class="all-box">
+            <text class="all-tit">优惠样式</text>
+            <text class="all-num red">-￥{{changeprice}}</text>
+        </view>
+        <view class="reallypay">
+            <view class="really-title">实付</view>
+            <view class="really-price"><text>￥</text>{{reallyPrice}}</view>
+        </view>
+    </view>
+</view>
+<view class="sc-br" wx:if="{{tabshow}}" style="padding-bottom: 120rpx;"></view>
+<view class="tab" wx:if="{{tabshow}}">
+    <view class="tabImg">
+        <image src="../../assets/Frame(7).png"></image>
+        联系客服
+    </view>
+    <view class="tabBtn {{style}}" bindtap="{{bintab}}">
+        <button>{{bindname}}</button>
+    </view>
+</view>

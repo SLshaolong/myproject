@@ -1,0 +1,61 @@
+<!--pages/mywallent/mywallent.wxml-->
+<view class="container">
+    <view class="bac">
+        <image src="../../assets/Frame2710.png"></image>
+    </view>
+    <view class="title">
+        我的钱包
+    </view>
+
+    <view class="wallentcontainer">
+        <view class="topimg">
+            <image src="../../assets/Frame(24).png"></image>
+        </view>
+        <view class="mywallent">
+            <view class="text">总资产</view>
+        </view>
+        <view class="wallentData">
+            <text>￥</text>{{mywallentData}}
+        </view>
+        <view class="lunchwallent">
+            <view class="lunchbox">
+                <view class="subTitle">
+                    近七日消费
+                </view>
+                <view class="beforeData">
+                    {{beforeWeekData}}
+                </view>
+            </view>
+            <view class="lunchbox">
+                <view class="subTitle">
+                    累计消费
+                </view>
+                <view class="beforeData">
+                    {{alreadyData}}
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="top">
+
+    </view>
+    <view class="sizedeatil">
+        <view class="tit">消费明细</view>
+
+        <view class="det" wx:for="{{list}}" wx:key="index" data-id="{{item.id}}" bindtap="{{item.flag?'changInto':null}}">
+            <view class="left">
+                <image>
+                </image>
+            </view>
+            <view class="middle">
+                <view class="m-top">{{item.name}}</view>
+                <view class="date">{{item.time}}</view>
+            </view>
+            <view class="last {{item.style}}">
+                {{item.money}}
+            </view>
+        </view>
+        
+    </view>
+
+</view>

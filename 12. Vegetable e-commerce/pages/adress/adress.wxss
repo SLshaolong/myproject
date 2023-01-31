@@ -1,0 +1,97 @@
+/* pages/adress/adress.wxss */
+page {
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.collect_top {
+    padding-top: 92rpx;
+    background-color: #fff;
+}
+
+.top_title {
+    padding: 18rpx 32rpx;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+
+.top_title image {
+    width: 32rpx;
+    height: 32rpx;
+    vertical-align: middle;
+    position: absolute;
+    left: 32rpx;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.adressList{
+    background-color: #fff;
+    padding: 32rpx;
+    margin: 16rpx;
+}
+.adress_top{
+    margin-bottom: 32rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.adress_name{
+    font-size: 36rpx;
+    color: rgba(0, 0, 0, .85);
+}
+.adress_phone{
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, .85);
+}
+.adress_detail{
+    font-size: 24rpx;
+    color: rgba(0, 0, 0, .65);
+    margin-bottom: 66rpx;
+}
+.adress_utils{
+    overflow: hidden;
+    clear: both;
+}
+.adress_checkbox{
+    color: rgba(0, 0, 0, .65);
+    display: flex;
+    align-items: center;
+    float: left;
+
+}
+.adress_checkbox icon{
+    margin-right: 6rpx;
+}
+.rightbox{
+    float: right;
+    display: flex;
+}
+.uitl_deit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.le{
+    margin-right: 32rpx;
+}
+.uitl_deit image{
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.btn{
+    margin-top: 32rpx;
+    padding: 0 32rpx;
+    width: 100%;
+    box-sizing: border-box;
+}
+.btn button{
+    border: 1rpx solid #40AA54 ;
+    width: 100%;
+    font-size: 28rpx;
+    color: #40AA54;
+    font-weight: normal;
+}

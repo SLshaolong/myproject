@@ -1,0 +1,140 @@
+/* pages/detail/detail.wxss */
+page {
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.collect_top {
+    padding-top: 92rpx;
+    background-color: #fff;
+}
+
+.top_title {
+    padding: 18rpx 32rpx;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+
+.top_title image {
+    width: 32rpx;
+    height: 32rpx;
+    vertical-align: middle;
+    position: absolute;
+    left: 32rpx;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.detail_detials>view{
+    margin-bottom: 16rpx;
+}
+.detailImage{
+    padding: 32rpx;
+    background-color: #fff;
+
+}
+.detailImage image{
+    width: 100%;
+
+}
+swiper{
+    height: 440rpx;
+}
+.detail_detials{
+    padding: 32rpx;
+    padding-top: 0;
+    background-color: #fff;
+}
+.detail_price{
+    display: flex;
+    color: #E34D59;
+    font-weight: 600;
+    align-items: flex-end;
+}
+.price::first-letter{
+    font-size:48rpx;
+}
+.deletePrice{
+    margin-left: 16rpx;
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, .45);
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+.detail_name{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    width: 542rpx;
+    font-weight: 600;
+}
+.fav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fav image{
+    width: 48rpx;
+    height: 48rpx;
+}
+.detail_desc{
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, .45);
+}
+.detail_class{
+    display: flex;
+    margin: 32rpx 0;
+}
+.detail_class>view{
+    margin-right: 16rpx;
+    border-radius: 4rpx;
+    font-size: 28rpx;
+    padding: 8rpx 4rpx;
+}
+.activeName{
+    background-color: #40AA54;
+    color: #fff;
+}
+.shalecore,.sub_active{
+    border: 1rpx solid #40AA54;
+    color: #40AA54;
+}
+.detail_info{
+    margin-top:32rpx;
+    display: flex;
+    font-size: 28rpx;
+    color: rgba(0, 0, 0, .45);
+}
+
+.utilBtn{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 104rpx;
+    box-shadow: 0 0 8rpx 0 rgba(0, 0, 0, .25);
+    background-color: #fff;
+    display: flex;
+    padding: 18rpx 32rpx;
+    align-items: center;
+    box-sizing: border-box;
+}
+.utilBtn button:first-child{
+margin-right: 32rpx;
+color: #40AA54;
+background-color: #fff;
+
+}
+.utilBtn button{
+    padding: 0;
+    height: 100%;
+    font-size: 28rpx;
+    background-color: #40AA54;
+    color: #fff;
+    font-weight: normal;
+    padding: 12rpx 0;
+    border: 1px solid #40AA54;
+    border-radius:50rpx;
+}

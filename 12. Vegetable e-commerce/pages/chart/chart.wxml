@@ -1,0 +1,74 @@
+<view class="container">
+
+    <view class="container_title">
+        <view class="container_bgc">
+            <image src="../../assets/Frame2710.png"></image>
+        </view>
+        <view class="text">购物车</view>
+    </view>
+    <view class="containboxs">
+        <view class="collect_box" wx:for="{{list}}" wx:key="index" data-id="{{item.id}}" bindtap="gotoDetail">
+            <view class="box_checkbox">
+                <icon wx:if="{{item.choice}}" type="success" catchtap="selectList" data-index="{{index}}" size="16"></icon>
+                <icon wx:else type="circle" color="#40AA54" catchtap="selectList" data-index="{{index}}" size="16"></icon>
+            </view>
+            <view class="box_img">
+                <image src="{{item.img}}"></image>
+            </view>
+            <view class="box_detail">
+                <view class="box_title">
+                    <text class="title_name">{{item.activeName}}</text>
+                    <text class="title_detail">{{item.title}}</text>
+                </view>
+                <view class="box_powerlshell">
+                    {{item.desc}}
+                </view>
+
+                <view class="box_price">
+                    <view class="left">
+                        ￥ <view class="priceDetail">{{item.price}}</view>
+                    </view>
+                    <view class="right">
+                        <image src="../../assets/Frame(14).png" wx:if="{{item.value>1}}" catchtap="changVal" data-index="{{index}}"  data-name='even'  ></image>
+                        <image src="../../assets/Frame(15).png" wx:else></image>
+                        <input type="text" value='{{item.value}}'  data-index="{{index}}"   disabled="true" />
+                        <image src="../../assets/Frame(16).png" wx:if="{{item.value<item.max}}"  data-index="{{index}}" catchtap="changVal" data-name="add"  ></image>
+                        <image src="../../assets/Frame(23).png" wx:else></image>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+    </view>
+
+    <view class="cart">
+        <view class="image">
+            <image src="../../assets/image14.png">
+
+            </image>
+            <view class="content">{{cartNum}}</view>
+        </view>
+        <view class="powel_box">
+            <view class="priceAll">
+                <view class="allprice">
+                    ￥<text>{{priceAll}}</text>
+                </view>
+                <view class="deleteprice">
+                    ￥<text>{{deleteAll}}</text>
+                </view>
+            </view>
+            <view class="activeAdd">
+                {{text1}} | {{text2}}
+            </view>
+        </view>
+
+        <view class="showall" >
+            明细 <image wx:if="{{!detaiOpen}}" src="../../assets/Frame(12).png"></image>
+            <image wx:else src="../../assets/Frame(17).png"></image>
+        </view>
+        <view class="gotoShell" bindtap="gotoShell">
+            <button>去结算</button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,139 @@
+<!--pages/classification/classification.wxml-->
+<view class="container {{cartDetail?'disstory':''}}">
+    <view class="collect_top">
+        <view class="top_title">
+            <image src="../../assets/back.png" bindtap="backUp" />
+            <view class="inputbox" bindtap="moveSearchView">
+                <image src="../../assets/search.png" class="search"></image>
+                <input type="text" placeholder="搜索商品" placeholder-class="placeholder" />
+            </view>
+        </view>
+    </view>
+
+
+    <view class="class_box">
+        <view class="class_firstDetail">
+            <view class="class_classify {{firstOptionIndex==index?'active':''}}" wx:for="{{firstDetailList}}" wx:key="index" data-index="{{index}}" bindtap="changeOptionsIndex">{{item}}</view>
+
+        </view>
+        <view class="class_secondDetail">
+            <view class="class_top_title">
+                <view class="class_options {{secondOptionIndex==index?'active':''}}" wx:for="{{secondDetailList}}" wx:key="index" data-index="{{index}}" bindtap="changeOptionsCurrent">
+                    {{item}}
+                </view>
+            </view>
+            <view class="class_view_box" wx:for="{{list}}" wx:key="index" >
+                <view class="first_title">{{item.title}}</view>
+                <view class="second_title">
+                    <view class="shale" bindtap="shaleShow">销量</view>
+                    <view class="price" bindtap="priceShow" data-index="{{index}}">价格 <image wx:if="{{item.shellContent}}" src="../../assets/Frame(19).png"></image>
+                        <image wx:else src="../../assets/Frame(20).png"></image>
+                    </view>
+                </view>
+                <view class="third_detail" wx:for="{{item.datalist}}" wx:key="index" bindtap="gotoDetail"  data-id="{{item.id}}" >
+                    <view class="box_img">
+                        <image src="{{item.img}}"></image>
+                    </view>
+                    <view class="box_detail">
+                        <view class="box_title">
+                            <text class="title_name" wx:if="{{item.activeName}}">{{item.activeName}}</text>
+                            <text class="title_detail">{{item.title}}</text>
+                        </view>
+                        <view class="box_powerlshell" wx:if="{{item.goodDetail||item.shellNum}}">
+                            月售{{item.shellNum}}份 好评率{{item.goodDetail}}%
+                        </view>
+                        <view class="box_active" wx:if="{{item.activeClass || item.coteData}}">
+                            <text>{{item.coteData}}</text>
+                            <text>{{item.activeClass}}</text>
+                        </view>
+                        <view class="box_price">
+                            ￥ <view class="priceDetail">{{item.price}}</view>
+                            <view class="removeshale" wx:if="{{item.deletePrice}}">￥{{item.deletePrice}}</view>
+                            <view class="add" data-id="{{item.id}}" catchtap="addShell">
+                                <image src="../../assets/Frame(16).png"></image>
+                            </view>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+
+
+    <view class="fuzhubox" wx:if="{{cartDetail}}">
+
+    </view>
+    <view class="cart">
+        <view class="image">
+            <image src="../../assets/image14.png">
+
+            </image>
+            <view class="content">{{cartNum}}</view>
+        </view>
+        <view class="powel_box">
+            <view class="priceAll">
+                <view class="allprice">
+                    ￥<text>{{priceAll}}</text>
+                </view>
+                <view class="deleteprice">
+                    ￥<text>{{deleteAll}}</text>
+                </view>
+            </view>
+            <view class="activeAdd">
+                {{text1}} | {{text2}}
+            </view>
+        </view>
+
+        <view class="showall" bindtap="openTab">
+            明细 <image wx:if="{{!detaiOpen}}" src="../../assets/Frame(12).png"></image>
+            <image wx:else src="../../assets/Frame(17).png"></image>
+        </view>
+        <view class="gotoShell" bindtap="gotoShell">
+            <button>去结算</button>
+        </view>
+    </view>
+
+    <view class="cartDetail" wx:if="{{detaiOpen}}">
+        <view class="detail_top">
+            <view class="detail_title">
+                折扣已减 <text>6.99</text> 元
+            </view>
+            <view class="detail_util"
+            bindtap="clearCart">
+                <image src="../../assets/Frame(13).png"></image>
+                清空购物车
+            </view>
+        </view>
+        <view class="detail_boxs">
+            <view class="detail_box" wx:for="{{cartList}}" wx:key="index">
+                <view class="images">
+                    <image src="{{item.img}}"></image>
+                </view>
+                <view class="box_titles">
+                    <view class="top_title_detail">
+                        {{item.title}}
+                    </view>
+                    <view class="price_detail">
+                        <view class="detail_all_price">
+                            ￥<text>{{item.price}}</text>
+                        </view>
+                        <view class="detail_all_delete" wx:if="{{item.delPrice}}">
+                            ￥<text>{{item.delPrice}}</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="box_util">
+                    <image src="../../assets/Frame(14).png" wx:if="{{item.value>1}}" bindtap="changeNum" data-name='even' data-id="{{index}}" ></image>
+                    <image src="../../assets/Frame(15).png" wx:else></image>
+                    <input type="text" value="{{item.value}}" bindinput="changeNum" bindblur="changeNum" data-id="{{index}}"  />
+                    <image src="../../assets/Frame(16).png" data-name="add"bindtap="changeNum" data-id="{{index}}"  ></image>
+                </view>
+            </view>
+           
+        </view>
+        
+    </view>
+</view>

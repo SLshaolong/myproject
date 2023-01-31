@@ -1,0 +1,157 @@
+/* pages/changepassword/changepaddword.wxss */
+@import '../../utils//back//back.wxss';
+
+page {
+    background-color: #f5f5f5;
+}
+
+.container {
+    padding-top: 92rpx;
+    position: relative;
+    background-color: #fff;
+
+}
+
+.back {
+    padding: 20rpx 0;
+}
+
+.title {
+    position: absolute;
+    top: 132rpx;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+}
+
+
+.user {
+    margin-top: 16rpx;
+    padding: 32rpx;
+    background-color: #fff;
+}
+
+.user .box {
+    display: flex;
+    margin-top: 32rpx;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 32rpx;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.222);
+}
+
+.box:first-child {
+    margin-top: 0;
+}
+
+.box:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.box input {
+    width: 300rpx;
+    box-sizing: border-box;
+}
+
+
+.detail {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.total {
+    padding: 40rpx;
+    background-color: rgba(0, 0, 0, .65);
+    display: inline-block;
+    border-radius: 8rpx;
+    color: #fff;
+    font-size: 24rpx;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 32rpx;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .25);
+
+}
+
+.footer .button {
+    flex: 1;
+    font-size: 28rpx;
+    background-color: #40AA54;
+    color: #fff;
+    font-weight: normal;
+}
+
+.boxMeg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 80rpx;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .65);
+    z-index: 2;
+    display: flex;
+    text-align: center;
+}
+
+.boxMeg .box {
+    background-color: #fff;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 48rpx;
+    width: 100%;
+}
+
+.boxtitle {
+    font-size: 36rpx;
+    font-weight: 600;
+}
+
+.info {
+    display: flex;
+    margin: 48rpx 0;
+    background-color: rgba(0, 0, 0, .04);
+    padding: 16rpx;
+    justify-content: space-between;
+
+}
+
+.info input {
+    text-align: left;
+}
+
+.getNUm {
+    color: #40AA54;
+    font-size: 28rpx;
+}
+
+.btnbox{
+    width: 100%;
+}
+.btnbox .btnne{
+    width: 100%;
+    background-color: #40AA54;
+    color: #fff;
+    border-radius: 4rpx;
+    font-size: 28rpx;
+}

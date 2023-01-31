@@ -1,0 +1,59 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/classification/classification",
+        "pages/mine/mine",
+        "pages/chart/chart",
+        "pages/login/login",
+        "pages/myinfo/myinfo",
+        "pages/forget/forget",
+        "pages/enterpass/enterpass",
+        "pages/changepassword/changepaddword",
+        "pages/mywallent/mywallent",
+        "pages/orderdetail/orderdetail",
+        "pages/allorder/allorder",
+        "pages/mycollect/mycollect",
+        "pages/adress/adress",
+        "pages/adressedit/adressedit",
+        "pages/searchview/searchview",
+        "pages/detail/detail",
+        "pages/buy/buy"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "蔬菜电商",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "assets/home.png",
+                "selectedIconPath": "assets/home_active.png"
+            },
+            {
+                "pagePath": "pages/classification/classification",
+                "text": "分类",
+                "iconPath": "assets/classpath.png",
+                "selectedIconPath": "assets/classpath_active.png"
+            },
+            {
+                "pagePath": "pages/chart/chart",
+                "text": "购物车",
+                "iconPath": "assets/chart.png",
+                "selectedIconPath": "assets/chart_active.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我的",
+                "iconPath": "assets/me.png",
+                "selectedIconPath": "assets/me_active.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

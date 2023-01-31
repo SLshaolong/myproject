@@ -1,0 +1,65 @@
+<!--pages/buy/buy.wxml-->
+<view class="container">
+    <view class="collect_top">
+        <view class="top_title">
+            <image src="../../assets/back.png" bindtap="backUp"></image>提交订单
+        </view>
+    </view>
+    <view class="top_buy">
+        <view class="top_box">
+            <view class="text"><text wx:if="{{index==-1}}">请选择收货地址</text> <text wx:else style="color: rgba(0, 0, 0, .8);">{{array[index]}} </text> </view>
+            <view class="img">
+                <view class="section">
+                    <picker mode="selector" bindchange="bindMultiPickerChange" value="{{index}}" range="{{array}}">
+                        <view class="picker">
+                            <image src="../../assets/Frame(3).png"></image>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+        <view class="top_box">
+            <view class="text">发货时间</view>
+            <view class="rightbox">
+                <picker mode="multiSelector" bindchange="bindChange" range="{{multiArray}}">
+                    <view class="right">
+                        <view class="t_title">{{time}}</view>
+                        <image src="../../assets/Frame(3).png"></image>
+                    </view>
+
+                </picker>
+            </view>
+        </view>
+    </view>
+
+    <view class="buy_details">
+        <view class="detail_box" wx:for="{{list}}" wx:key="index">
+            <view class="boximg">
+                <image src="{{item.img}}"></image>
+            </view>
+            <view class="boxtitle">
+                <view class="titlebox">{{item.title}}</view>
+                <view class="allbox">{{item.all}} 份</view>
+            </view>
+            <view class="price">
+                ￥ {{item.price}}
+            </view>
+        </view>
+    </view>
+    <view class="paydetail">
+        <view class="pay_box" wx:for="{{priceList}}" wx:key="index">
+            <view class="name">{{item.name}}</view>
+            <view class="priceName {{item.active?'active':''}}"> <text wx:if="{{item.active}}">-</text>￥ {{item.price}}</view>
+        </view>
+    </view>
+
+    <view class="paybutton">
+        <view class="left">
+            总计 <view class="allPrice">￥ {{priceAll}} </view>
+            <view class="det">￥ {{det}}</view>
+        </view>
+        <view class="right">
+            <button bindtap="payNow">立即支付</button>
+        </view>
+    </view>
+</view>

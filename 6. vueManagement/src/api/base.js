@@ -1,5 +1,5 @@
 const base={
-    baseUrl:"http://182.92.103.212:3030",
+    baseUrl:"base:3030",
     login:'/api/login',
     registe:'/api/registe',
     productlist:'/api/backend/item/selectTbItemAllByPage',

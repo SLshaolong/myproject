@@ -1,0 +1,46 @@
+<!--pages/myinfo/myinfo.wxml-->
+<import src="../../utils/back/back.wxml"></import>
+<view class="container">
+    <view class="top">
+        <template is="return" />
+    </view>
+    <view class="title">修改密码</view>
+</view>
+<view class="user">
+   <view class="box" bindtap="fouces1">
+       <view class="text">原密码</view>
+       <input type="password" bindinput="inputChange" bindblur="inputChange" value="{{va1}}" focus="{{focu1}}"/>
+   </view>
+   <view class="box" bindtap="fouces2">
+       <view class="text">原密码</view>
+       <input type="password" value="{{va2}}" bindinput="v2Change" bindblur="v2Change" focus="{{focu2}}"/>
+   </view>
+   <view class="box" bindtap="fouces3">
+       <view class="text">原密码</view>
+       <input type="password" value="{{va3}}" bindinput="v3Change" bindblur="v3Change" focus="{{focu3}}"/>
+   </view>
+</view>
+
+<view class="detail" wx:if="{{isshow}}">
+    <view class="total">
+        {{total}}
+    </view>
+</view>
+
+<view class="boxMeg" wx:if="{{box}}">
+    <view class="box">
+        <view class="boxtitle">填写验证码</view>
+        <view class="info">
+            <input type="text" value="{{inputVal}}" bindinput="inputValue" bindblur="inputValue" />
+            <view bindtap="getNum" class="getNUm">获取验证码</view>
+        </view>
+      <view class="btnbox">
+        <button class="btnne" type="primary" bindtap="changeInfo">确认修改</button>
+      </view>
+    </view>
+</view>
+
+
+<view class="footer">
+    <button type="default" class="button" bindtap="moveChnage">{{btn}}</button>
+</view>
